@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
     <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <link rel="stylesheet" href="style.css">
-<img>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
     <div class="logo">IKI</div>
     <ul class="nav-links">
     <li><a href="#">Beranda</a></li>
@@ -14,25 +16,28 @@
     <li><a href="#kontak">Kontak</a></li>
     </ul>
     </nav>
-    <h1 id="Beranda">Rifki Al Sauqy</h1>
-    <a href="https://www.instagram.com/rifklsqy?igsh=dmNkMWh3cHQxbm5p"><img src="img/Foto_Rifki.jpg" class="foto_bulat"></a>
-
-    <p style="line-height: 1.2;" class="p_body">
-        Nama: Rifki Al Sauqy<br>
-        NIM: 241401007<br>
-        Kom: A<br>
-        Hobi: Nonton, Membaca komik, dan Belajar (<u>kalau lagi mood</u>)<br>
-        Motto hidup: Belajarlah Suatu Hal Dari Siapapun Tanpa Meremehkannya
-    </p>
-
-    <p style="text-align: justify;" id="Jadwal" class="p_body">
-        Saya adalah seorang mahasiswa Ilmu Komputer dari kampus Universitas Sumatera Utara, saya biasa dipanggil <b>IKI</b>
-        saya dulunya berasal dari sekolah yang tidak terlalu terkenal dan nilainya tidak sebagus yang dibayangkan, 
-        tetapi itu tidak membuat saya putus semangat untuk bersaing dengan orang-orang yang sekolahnya terkenal, karena saya yakin ketika kita ingin belajar tempat tidaklah menjadi hambatan.
-    </p>
+    <!-- <h1 id="Beranda">Rifki Al Sauqy</h1> -->
+    <div class="head">
+        
+        <p style="line-height: 1.2;" class="p_body" id="kenal">
+            Nama: Rifki Al Sauqy<br>
+            NIM: 241401007<br>
+            Kom: A<br>
+            Hobi: Nonton, Membaca komik, dan Belajar (<u>kalau lagi mood</u>)<br>
+            Motto hidup: Belajarlah Suatu Hal Dari Siapapun Tanpa Meremehkannya<br>
+            <br>
+            Saya adalah seorang mahasiswa Ilmu Komputer dari kampus Universitas Sumatera Utara, saya biasa dipanggil <b>IKI</b>
+            saya dulunya berasal dari sekolah yang tidak terlalu terkenal dan nilainya tidak sebagus yang dibayangkan, 
+            tetapi itu tidak membuat saya putus semangat untuk bersaing dengan orang-orang yang sekolahnya terkenal, karena saya yakin ketika kita ingin belajar tempat tidaklah menjadi hambatan.
+        </p>
+        
+        
+        <img src="img/Foto_Rifki.jpg" class="foto_bulat">
+    </div>
+    
 
     <table cellpadding="4" border="1">
-        <thead>
+        <thead id="Jadwal">
             <tr>
                 <th>No</th>
                 <th>Mata Kuliah</th>
@@ -213,12 +218,13 @@
     <footer class="footer">
       <div class="footer-content">
         <ul class="social-links">
-          <li><a href="#"><span>📱</span> WA</a></li>
-          <li><a href="#"><span>💼</span> LinkedIn</a></li>
-          <li><a href="#"><span>📸</span> Instagram</a></li>
+          <li><a href="https://www.instagram.com/rifklsqy?igsh=dmNkMWh3cHQxbm5p"><img src="img/instagram-svgrepo-com.svg" alt="instagram" class="sosmed"></a></li>
+          <li><a href="https://github.com/IKIII0"><img src="img/github-142-svgrepo-com.svg" alt="github" class="sosmed"></a></li>
+          <li><a href="https://www.linkedin.com/in/rifki-al-sauqy-b32a272a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/linkedin-logo-svgrepo-com.svg" alt="linkedln" class="sosmed"></a></li>
         </ul>
       </div>
       <p class="copyright" id="kontak">© 2025 IKI | Portofolio Saya</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
