@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Kode Mono", monospace;
   background: linear-gradient(to bottom right, #0f172a, #1e293b);
   color: #e2e8f0;
   margin: 0;
@@ -45,11 +45,11 @@ h1:hover {
 /* ======================BAGIAN PARAGRAF=========================== */
 .p_body {
   max-width: 600px;
-  margin: 0 auto 30px;
   font-size: 16px;
   line-height: 1.6;
   background-color: #1e293b;
   padding: 15px;
+  margin-left: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   color: #cbd5e1;
@@ -59,6 +59,36 @@ h1:hover {
 .p_body:hover{
   border-left-color:#bb0000;
   transition: 0.5s ease;
+}
+
+.p_body1 {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #1e293b;
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  color: #cbd5e1;
+  border-left: 4px solid #facc15;
+  text-align: justify;
+}
+
+.p_body1:hover{
+  border-left-color:#bb0000;
+  transition: 0.5s ease;
+}
+
+.head{
+  margin-top: 6%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 /* ======================BAGIAN TABEL=========================== */
@@ -98,10 +128,11 @@ tbody tr:hover {
 
 /* ======================BAGIAN FOTO=========================== */
 .foto_bulat {
-  display: block;
-  margin: 0 auto 20px;
-  width: 180px;
-  height: 180px;
+  display: flex;
+  margin-right: 200px;
+  /* margin-top: 200px; */
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #facc15;
@@ -128,12 +159,12 @@ tbody tr:hover {
   top: 0;
   width: 100%;
   z-index: 99999;
+  transition: top 0.3s ease-in-out;
 }
-
 
 .logo {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 780;
   color: #facc15;
   padding-left: 3%;
   border-color: #ffcc00;
@@ -253,7 +284,7 @@ tbody tr:hover {
 .social-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -263,10 +294,6 @@ tbody tr:hover {
   color: #ccc;
   font-weight: 500;
   transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #facc15;
 }
 
 .social-links span {
@@ -279,5 +306,11 @@ footer p {
   color: #666;
 }
 
+.sosmed {
+  width: 40px;
+  height: 50px;
+}
 
-
+.copyright {
+  margin-top: 10px;
+}
