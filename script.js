@@ -14,3 +14,9 @@ window.onscroll = function () {
   }
   prevScroll = currentScroll;
 };
+
+document.addEventListener("mousemove", function (e) {
+  if (e.clientY < 80) {
+    navbar.style.top = "0";
+  }
+});
