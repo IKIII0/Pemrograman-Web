@@ -1,12 +1,10 @@
 let prevScroll = window.pageYOffset;
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navbar = document.getElementById("navbar");
 
 window.onscroll = function () {
   let currentScroll = window.pageYOffset;
-  const navbar = document.getElementById("navbar");
-
-  console.log("prevScroll: ", prevScroll);
-  console.log("currentScroll: ", currentScroll);
-
   if (prevScroll > currentScroll) {
     navbar.style.top = "0";
   } else {
@@ -16,7 +14,11 @@ window.onscroll = function () {
 };
 
 document.addEventListener("mousemove", function (e) {
-  if (e.clientY < 80) {
+  if (e.clientY < 50) {
     navbar.style.top = "0";
   }
+});
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });
