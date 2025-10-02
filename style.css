@@ -69,6 +69,7 @@ h1:hover {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
+  flex-wrap: wrap;
 }
 
 /* ======================BAGIAN TABEL=========================== */
@@ -323,3 +324,91 @@ footer p {
 .copyright {
   margin-top: 10px;
 }
+
+/* =====BAGIAN ATUR RESPONSIVE===== */
+/* RESPONSIVE UNTUK LAYAR KECIL (HP) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+    background-color: #1e293b;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .navbar {
+    padding: 10px 15px;
+  }
+  .logo {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  /* Head section */
+  .head {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    max-width: 300px;
+    height: auto;
+  }
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+/* RESPONSIVE UNTUK LAYAR SEDANG (TABLET) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .head {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .foto_bulat {
+    margin: 20px 0 0 0;
+    width: 250px;
+    height: 250px;
+  }
+  .p_body {
+    margin-left: 0;
+    max-width: 600px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #facc15;
+  cursor: pointer;
+  padding-left: 1rem;
+  position: fixed;
+  top: 10px; 
+  right: 20px;
+  z-index: 100000; 
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: top 0.3s ease-in-out;
+}
+
+
+
