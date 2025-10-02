@@ -2,6 +2,8 @@
 <!-- HEADER -->
 <head>
     <title>Portofolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
@@ -9,10 +11,11 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
-
-<!-- NAVBAR -->
+<body>
+    <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
     <div class="logo">IKI</div>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
     <ul class="nav-links">
     <li><a href="#">Beranda</a></li>
     <li><a href="#Jadwal">Jadwal Kuliah</a></li>
@@ -22,7 +25,7 @@
     </ul>
     </nav>
     
-<!-- PARAGRAF -->
+<!-- UTAMA -->
     <div class="head">       
         <p style="line-height: 1.2;" class="p_body" id="kenal">
             Nama: Rifki Al Sauqy<br>
@@ -51,6 +54,7 @@
                 <th>Tipe Kelas</th>
                 <th>Ruangan</th>
                 <th>Jadwal</th>
+                <th>Dosen Pengampu</th>
             </tr>
         </thead>
         <tbody style="text-align: center;">
@@ -63,6 +67,7 @@
                 <td>Reguler</td>
                 <td>D-104</td>
                 <td>Jumat, 08:00-09:40</td>
+                <td>Dr. T. Henny Febriana Harumy S.Kom., M.Kom, Dr. Fauzan Nurahmadi S.Kom., M.Cs</td>
             </tr>
             <tr>
                 <td>2</td>
@@ -73,6 +78,7 @@
                 <td>Reguler</td>
                 <td>D-103</td>
                 <td>Rabu, 14:40-17:10</td>
+                <td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom, Insidini Fawwaz M.Kom</td>
             </tr>
             <tr>
                 <td>3</td>
@@ -83,6 +89,7 @@
                 <td>Reguler</td>
                 <td>-</td>
                 <td>Belum Diset</td>
+                <td>Insidini Fawwaz M.Kom</td>
             </tr>
             <tr>
                 <td>4</td>
@@ -93,6 +100,7 @@
                 <td>Reguler</td>
                 <td>-</td>
                 <td>Belum Diset</td>
+                <td>Insidini Fawwaz M.Kom</td>
             </tr>
             <tr>
                 <td>5</td>
@@ -103,66 +111,74 @@
                 <td>Reguler</td>
                 <td>D-101</td>
                 <td>Jumat, 13:50-16:20</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Pemrograman Web</td>
-                <td>3</td>
-                <td>3</td>
-                <td>A</td>
-                <td>Reguler</td>
-                <td>D-103</td>
-                <td>Rabu, 08:00-10:30</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Praktikum Pemrograman Web</td>
-                <td>1</td>
-                <td>3</td>
-                <td>A</td>
-                <td>Reguler</td>
-                <td>-</td>
-                <td>Belum Diset</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Komputerisasi Ekonomi dan Bisnis</td>
-                <td>2</td>
-                <td>-</td>
-                <td>KWU-A</td>
-                <td>MKWU</td>
-                <td>GL 1</td>
-                <td>Senin, 10:30-12:10</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>IELTS Preparation</td>
-                <td>2</td>
-                <td>-</td>
-                <td>PIK-E</td>
-                <td>MKWU</td>
-                <td>D-101</td>
-                <td>Selasa, 08:50-10:30</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Kecerdasan Buatan</td>
-                <td>3</td>
-                <td>5</td>
-                <td>A</td>
-                <td>Reguler</td>
-                <td>D-104</td>
-                <td>Selasa, 13:50-16:20</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>Etika Profesi</td>
-                <td>2</td>
-                <td>5</td>
-                <td>B</td>
-                <td>Reguler</td>
-                <td>D-102</td>
-                <td>Rabu, 13:00-14:40</td>
+                <td>Anandhini Medianty Nababan S.Kom., M.T,
+                    Insidini Fawwaz M.Kom</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Pemrograman Web</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>Reguler</td>
+                    <td>D-103</td>
+                    <td>Rabu, 08:00-10:30</td>
+                    <td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom, Nurrahmadayeni M.Kom</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Praktikum Pemrograman Web</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>Reguler</td>
+                    <td>-</td>
+                    <td>Belum Diset</td>
+                    <td>Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Komputerisasi Ekonomi dan Bisnis</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>KWU-A</td>
+                    <td>MKWU</td>
+                    <td>GL 1</td>
+                    <td>Senin, 10:30-12:10</td>
+                    <td>Taufik Akbar Parluhutan SE, M.Si</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>IELTS Preparation</td>
+                    <td>2</td>
+                    <td>-</td>
+                    <td>PIK-E</td>
+                    <td>MKWU</td>
+                    <td>D-101</td>
+                    <td>Selasa, 08:50-10:30</td>
+                    <td>Drs. Yulianus Harefa GradDipEd TESOL., MEd TESOL</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Kecerdasan Buatan</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>Reguler</td>
+                    <td>D-104</td>
+                    <td>Selasa, 13:50-16:20</td>
+                    <td>Dr. Amalia S.T., M.T., Dr. Pauzi Ibrahim Nainggolan S.Komp., M.Sc.</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Etika Profesi</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>B</td>
+                    <td>Reguler</td>
+                    <td>D-102</td>
+                    <td>Rabu, 13:00-14:40</td>
+                    <td>Dr. Ir. Elviawaty Muisa Zamzami S.T., M.T., M.M., IPU, Dr. Eng Ade Candra S.T., M.Kom.</td>
             </tr>
         </tbody>
     </table>
